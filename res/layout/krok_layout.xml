@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/opis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_effect" >
+
+        <RelativeLayout
+            android:id="@+id/krok_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_unselected"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/krok_tittle_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/krok_tittle_delete"
+                android:text="@string/krok"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/krok_tittle_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/krok_tittle_textview"
+                android:ems="10"
+                android:hint="@string/tytul" />
+
+            <ImageView
+                android:id="@+id/krok_tittle_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/krok_tittle_edittext"
+                android:layout_toRightOf="@+id/krok_tittle_edittext"
+                android:src="@android:drawable/ic_menu_save" />
+
+            <ImageView
+                android:id="@+id/krok_tittle_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/ic_delete" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/krok_opis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/krok_tittle"
+            android:ems="10"
+            android:hint="@string/opis"
+            android:inputType="textMultiLine"
+            android:minHeight="80dp" />
+
+        <TextView
+            android:id="@+id/krok_opis_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/krok_tittle"
+            android:layout_margin="5dp"
+                android:textSize="18sp"
+            android:text="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/heart"
+        android:icon="@drawable/heart"
+        android:showAsAction="ifRoom"
+        android:title="@string/ulubione">
+    </item>
+    <item
+        android:id="@+id/heart_bw"
+        android:icon="@drawable/heart_bw"
+        android:showAsAction="ifRoom"
+        android:title="@string/ulubione">
+    </item>
+    <item
+        android:id="@+id/menu_item_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="ifRoom"
+        android:title="Share">
+    </item>
+
+</menu>

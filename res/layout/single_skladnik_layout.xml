@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/single_skladnik_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/skladnik_usun_button"
+        android:text="@string/dotknij_aby_edytowac"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/skladnik_usun_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:src="@android:drawable/ic_delete" />
+
+    <EditText
+        android:id="@+id/single_skladnik_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/single_skladnik_textview"
+        android:ems="10"
+        android:hint="@string/dodaj_skladnik" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/single_skladnik_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/single_skladnik_edittext"
+        android:layout_toRightOf="@id/single_skladnik_edittext"
+        android:src="@android:drawable/ic_menu_save" />
+
+</RelativeLayout>

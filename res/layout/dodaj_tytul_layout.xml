@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/krok_tittle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tytul" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/krok_tittle_textview"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shadow_effect" >
+
+        <TextView
+            android:id="@+id/dodaj_tytul_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/dotknij_aby_edytowac"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dodaj_tytul_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dodaj_tytul_textview"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/dodaj_tytul" />
+
+        <ImageView
+            android:id="@+id/dodaj_tytul_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/dodaj_tytul_edittext"
+            android:layout_toRightOf="@id/dodaj_tytul_edittext"
+            android:adjustViewBounds="true"
+            android:src="@android:drawable/ic_menu_save" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

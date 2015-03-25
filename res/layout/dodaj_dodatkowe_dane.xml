@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dodatkowe_dane" />
+
+    <RelativeLayout
+        android:id="@+id/dodatkowe_opcje_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:background="@drawable/shadow_effect"
+        android:padding="10dp" >
+
+        <Switch
+            android:id="@+id/dodatkowe_dane_widoczny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:checked="true"
+            android:text="@string/widoczny_dla_wszystkich"
+            android:textOff="@string/nie"
+            android:textOn="@string/tak" />
+
+        <TextView
+            android:id="@+id/krok_tittle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/dodatkowe_dane_kategoria"
+            android:layout_marginTop="10dp"
+            android:text="@string/kategoria" />
+
+        <Spinner
+            android:id="@+id/dodatkowe_dane_kategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dodatkowe_dane_widoczny"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/krok_tittle_textview"
+            android:entries="@array/kategorie" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/dodatkowe_dane_trudnosc"
+            android:layout_marginTop="10dp"
+            android:text="@string/trudnosc" />
+
+        <Spinner
+            android:id="@+id/dodatkowe_dane_trudnosc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dodatkowe_dane_kategoria"
+            android:layout_below="@+id/dodatkowe_dane_kategoria"
+            android:layout_marginLeft="5dp"
+            android:entries="@array/trudnosc" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/dodatkowe_dane_czas"
+            android:layout_marginTop="10dp"
+            android:text="@string/czas" />
+
+        <Spinner
+            android:id="@+id/dodatkowe_dane_czas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dodatkowe_dane_trudnosc"
+            android:layout_below="@+id/dodatkowe_dane_trudnosc"
+            android:layout_marginLeft="5dp"
+            android:entries="@array/czas" />
+    </RelativeLayout>
+
+</RelativeLayout>

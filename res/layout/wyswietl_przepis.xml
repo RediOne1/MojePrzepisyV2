@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".WyswietlPrzepis" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/include1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                layout="@layout/przepis_maly_layout" />
+
+            <include
+                android:id="@+id/include2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/include1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/ocen_przepis_layout" />
+
+            <include
+                android:id="@+id/include3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                layout="@layout/wyswietl_skladniki" />
+
+            <include
+                android:id="@+id/include4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/wyswietl_opis" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

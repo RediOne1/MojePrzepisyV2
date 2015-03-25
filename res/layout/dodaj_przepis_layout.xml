@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".DodajPrzepisActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/include1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                layout="@layout/dodaj_zdjecie_layout" />
+
+            <include
+                android:id="@+id/include2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/dodaj_tytul_layout" />
+
+            <include
+                android:id="@+id/include3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                layout="@layout/dodaj_skladnik_layout" />
+
+            <include
+                android:id="@+id/include4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                layout="@layout/dodaj_opis" />
+
+            <include
+                android:id="@+id/include5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include4"
+                android:layout_margin="10dp"
+                layout="@layout/dodaj_dodatkowe_dane" />
+
+            <Button
+                android:id="@+id/dodaj_przepis_wyslij_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include5"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shadow_effect"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                android:text="@string/wyslij_przepis" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

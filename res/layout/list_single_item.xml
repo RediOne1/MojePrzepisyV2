@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/single_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_effect" >
+
+        <TextView
+            android:id="@+id/nr_najwyzej_oceniane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="1."
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/single_item_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@+id/nr_najwyzej_oceniane"
+            android:adjustViewBounds="true"
+            android:paddingTop="1dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/noimage" />
+
+        <TextView
+            android:id="@+id/single_item_tytul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/single_item_image"
+            android:singleLine="true"
+            android:text="Barszcz czerwony z uszkami"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/single_item_kategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/single_item_tytul"
+            android:layout_below="@+id/single_item_tytul"
+            android:text="kategoria" />
+
+        <TextView
+            android:id="@+id/single_item_przepisID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/single_item_autorID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <RatingBar
+            android:id="@+id/single_item_ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/single_item_kategoria"
+            android:layout_toRightOf="@id/single_item_image"
+            android:numStars="5"
+            android:stepSize="0.25" />
+
+        <TextView
+            android:id="@+id/single_item_ocena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/single_item_kategoria"
+            android:layout_toRightOf="@id/single_item_ratingbar"
+            android:maxLength="4"
+            android:text="3.5" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

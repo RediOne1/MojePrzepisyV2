@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mojeprzepisy.aplikacja"
+    android:versionCode="36"
+    android:versionName="3.0.12/22.09.2014" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.mojeprzepisy.aplikacja.narzedzia.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.NajwyzejOceniane"
+            android:label="@string/title_activity_najwyzej_oceniane"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.WybierzKategorie"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.OstatnioDodane"
+            android:label="@string/title_activity_ostatnio_dodane"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.przepis.Przepis"
+            android:label="@string/title_activity_przepis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.dodaj_przepis.DodajPrzepisActivity"
+            android:label="@string/title_activity_dodaj_przepis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.wyswietl_przepis.WyswietlPrzepis"
+            android:label="@string/title_activity_wyswietl_przepis" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.narzedzia.Szukaj"
+            android:label="@string/szukaj"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.Lista_przepisy"
+            android:label="@string/title_activity_lista_przepisy" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.RejestracjaActivity"
+            android:label="@string/title_activity_rejestracja"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.mojeprzepisy.narzedzia.MyApp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.mojeprzepisy.aplikacja.narzedzia.MojePrzepisy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mojeprzepisy.aplikacja.UlubioneActivity"
+            android:label="@string/title_activity_ulubione"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
